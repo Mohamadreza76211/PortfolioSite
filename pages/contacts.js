@@ -1,4 +1,5 @@
 import ContactSection from "../src/components/ContactSection";
+import { ImagePageBanner } from "../src/components/PageBanner";
 import { DefaultPageBanner } from "../src/components/PageBanner";
 import Layout from "../src/layout/Layout";
 const Contacts = () => {
@@ -7,7 +8,7 @@ const Contacts = () => {
   ];
   return (
     <Layout>
-      <DefaultPageBanner pageName={"Contact"} typingData={typingAnimation} />
+      <ImagePageBanner pageName={"Contacts"} typingData={typingAnimation} />
       <ContactSection />
     </Layout>
   );

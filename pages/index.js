@@ -3,7 +3,7 @@ import Layout from "../src/layout/Layout";
 const Index = () => {
   return (
     <Layout>
-      <div className="section started" id="section-started">
+      <div className="section started personal" id="section-started">
         {/* background */}
         <div className="video-bg">
           <div className="video-bg-mask" />
@@ -13,12 +13,16 @@ const Index = () => {
         <div className="centrize full-width">
           <div className="vertical-center">
             <div className="started-content">
+              <div
+                className="logo"
+                style={{ backgroundImage: "url(images/man.jpg)" }}
+              />
               <h1 className="h-title">
-                Hello, {`I’m`} <strong>Alejandro Abeyta</strong>, UX/UI Designer
-                and <br />
-                Front-end Developer Based in San Francisco.
+                Hello, I’m <strong>Mohammadreza Haji Najafi</strong>,
+                <br />
+                Front-end Developer.
               </h1>
-              <TypingAnimation extraClassName={"h-subtitle"} />
+              <TypingAnimation extraClassName={"typed-subtitle"} />
               <span className="typed-subtitle" />
             </div>
           </div>

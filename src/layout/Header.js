@@ -3,10 +3,10 @@ import { Fragment, useState } from "react";
 
 const Menu = () => (
   <Fragment>
-    <div className="logo hover-masks-logo">
+    <div style={{ width: "200px" }} className="logo hover-masks-logo">
       <a href="#">
         <span className="mask-lnk">
-          Alejandro <strong>Abeyta</strong>
+          Mohammadreza <strong>Haji Najafi</strong>
         </span>
         <span className="mask-lnk mask-lnk-hover">
           Download <strong>CV</strong>
@@ -37,61 +37,11 @@ const Menu = () => (
                   </Link>
                 </li>
                 <li className="menu-item">
-                  <Link href="/index_creative">
-                    <a>
-                      <span className="mask-lnk">Home Creative</span>
-                      <span className="mask-lnk mask-lnk-hover">
-                        Home Creative
-                      </span>
-                    </a>
-                  </Link>
-                </li>
-                <li className="menu-item">
                   <Link href="/index_slider">
                     <a>
                       <span className="mask-lnk">Home Slider</span>
                       <span className="mask-lnk mask-lnk-hover">
                         Home Slider
-                      </span>
-                    </a>
-                  </Link>
-                </li>
-                <li className="menu-item">
-                  <Link href="/index_personal">
-                    <a>
-                      <span className="mask-lnk">Home Personal</span>
-                      <span className="mask-lnk mask-lnk-hover">
-                        Home Personal
-                      </span>
-                    </a>
-                  </Link>
-                </li>
-                <li className="menu-item">
-                  <Link href="/index_onepage">
-                    <a target="blank">
-                      <span className="mask-lnk">Home OnePage</span>
-                      <span className="mask-lnk mask-lnk-hover">
-                        Home OnePage
-                      </span>
-                    </a>
-                  </Link>
-                </li>
-                <li className="menu-item">
-                  <Link href="/index_image">
-                    <a>
-                      <span className="mask-lnk">Home Image</span>
-                      <span className="mask-lnk mask-lnk-hover">
-                        Home Image
-                      </span>
-                    </a>
-                  </Link>
-                </li>
-                <li className="menu-item">
-                  <Link href="/index_video">
-                    <a>
-                      <span className="mask-lnk">Home Video</span>
-                      <span className="mask-lnk mask-lnk-hover">
-                        Home Video
                       </span>
                     </a>
                   </Link>
@@ -112,26 +62,6 @@ const Menu = () => (
                       <span className="mask-lnk">Resume Default</span>
                       <span className="mask-lnk mask-lnk-hover">
                         Resume Default
-                      </span>
-                    </a>
-                  </Link>
-                </li>
-                <li className="menu-item">
-                  <Link href="/resume_image">
-                    <a>
-                      <span className="mask-lnk">Resume Image</span>
-                      <span className="mask-lnk mask-lnk-hover">
-                        Resume Image
-                      </span>
-                    </a>
-                  </Link>
-                </li>
-                <li className="menu-item">
-                  <Link href="/resume_creative">
-                    <a>
-                      <span className="mask-lnk">Resume Creative</span>
-                      <span className="mask-lnk mask-lnk-hover">
-                        Resume Creative
                       </span>
                     </a>
                   </Link>
@@ -157,41 +87,11 @@ const Menu = () => (
                   </Link>
                 </li>
                 <li className="menu-item">
-                  <Link href="/works_creative">
-                    <a>
-                      <span className="mask-lnk">Works Creative</span>
-                      <span className="mask-lnk mask-lnk-hover">
-                        Works Creative
-                      </span>
-                    </a>
-                  </Link>
-                </li>
-                <li className="menu-item">
-                  <Link href="/work_single">
-                    <a>
-                      <span className="mask-lnk">Work Single</span>
-                      <span className="mask-lnk mask-lnk-hover">
-                        Work Single
-                      </span>
-                    </a>
-                  </Link>
-                </li>
-                <li className="menu-item">
                   <Link href="/work_single_image">
                     <a>
                       <span className="mask-lnk">Work Single Image</span>
                       <span className="mask-lnk mask-lnk-hover">
                         Work Single Image
-                      </span>
-                    </a>
-                  </Link>
-                </li>
-                <li className="menu-item">
-                  <Link href="/work_single_creative">
-                    <a>
-                      <span className="mask-lnk">Work Single Creative</span>
-                      <span className="mask-lnk mask-lnk-hover">
-                        Work Single Creative
                       </span>
                     </a>
                   </Link>
@@ -242,36 +142,6 @@ const Menu = () => (
                       <span className="mask-lnk">Contact Default</span>
                       <span className="mask-lnk mask-lnk-hover">
                         Contact Default
-                      </span>
-                    </a>
-                  </Link>
-                </li>
-                <li className="menu-item">
-                  <Link href="/contacts_map">
-                    <a>
-                      <span className="mask-lnk">Contact Map</span>
-                      <span className="mask-lnk mask-lnk-hover">
-                        Contact Map
-                      </span>
-                    </a>
-                  </Link>
-                </li>
-                <li className="menu-item">
-                  <Link href="/contacts_image">
-                    <a>
-                      <span className="mask-lnk">Contact Image</span>
-                      <span className="mask-lnk mask-lnk-hover">
-                        Contact Image
-                      </span>
-                    </a>
-                  </Link>
-                </li>
-                <li className="menu-item">
-                  <Link href="/contacts_creative">
-                    <a>
-                      <span className="mask-lnk">Contact Creative</span>
-                      <span className="mask-lnk mask-lnk-hover">
-                        Contact Creative
                       </span>
                     </a>
                   </Link>

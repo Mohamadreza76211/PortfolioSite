@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 const TypingAnimation = ({ typingData, extraClassName }) => {
@@ -10,8 +11,8 @@ const TypingAnimation = ({ typingData, extraClassName }) => {
         ? typingData
         : [
             "I code cool <strong>websites</strong>",
-            "I develop <strong>mobile apps</strong>",
-            "I love <strong>wordpress</strong>",
+            "I develop <strong>responsive apps</strong>",
+            "I love <strong>Next js</strong>",
           ], // Strings to display
       typeSpeed: 100,
       backSpeed: 100,
