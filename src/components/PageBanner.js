@@ -100,7 +100,7 @@ export const ImagePageBanner = ({
         className="video-bg jarallax"
         style={{
           backgroundImage: `url(${
-            bannerImg ? bannerImg : "images/resume_bg.jpg"
+            bannerImg ? bannerImg : "images/Contact.jpg"
           })`,
         }}
       >

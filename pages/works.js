@@ -1,4 +1,7 @@
-import { DefaultPageBanner } from "../src/components/PageBanner";
+import {
+  DefaultPageBanner,
+  ImagePageBanner,
+} from "../src/components/PageBanner";
 import Layout from "../src/layout/Layout";
 
 import dynamic from "next/dynamic";
@@ -12,7 +15,11 @@ const Works = () => {
   ];
   return (
     <Layout>
-      <DefaultPageBanner pageName={"works"} typingData={typingAnimation} />
+      <ImagePageBanner
+        pageName={"Some of my projects"}
+        typingData={typingAnimation}
+        bannerImg="images/Work.jpg"
+      />
       <div className="section works" id="next_section">
         <div className="content">
           <ItemIsotope />

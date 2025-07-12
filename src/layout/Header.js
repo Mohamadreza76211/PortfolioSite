@@ -36,16 +36,6 @@ const Menu = () => (
                     </a>
                   </Link>
                 </li>
-                <li className="menu-item">
-                  <Link href="/index_slider">
-                    <a>
-                      <span className="mask-lnk">Home Slider</span>
-                      <span className="mask-lnk mask-lnk-hover">
-                        Home Slider
-                      </span>
-                    </a>
-                  </Link>
-                </li>
               </ul>
             </li>
             <li className="menu-item menu-item-has-children">
@@ -86,16 +76,6 @@ const Menu = () => (
                     </a>
                   </Link>
                 </li>
-                <li className="menu-item">
-                  <Link href="/work_single_image">
-                    <a>
-                      <span className="mask-lnk">Work Single Image</span>
-                      <span className="mask-lnk mask-lnk-hover">
-                        Work Single Image
-                      </span>
-                    </a>
-                  </Link>
-                </li>
               </ul>
             </li>
             <li className="menu-item menu-item-has-children">
@@ -116,7 +96,7 @@ const Menu = () => (
                     </a>
                   </Link>
                 </li>
-                <li className="menu-item">
+                {/* <li className="menu-item">
                   <Link href="/blog_post">
                     <a>
                       <span className="mask-lnk">Single Post</span>
@@ -125,7 +105,7 @@ const Menu = () => (
                       </span>
                     </a>
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </li>
             <li className="menu-item menu-item-has-children">

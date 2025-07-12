@@ -1,5 +1,65 @@
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
+import emailjs from "emailjs-com";
+import Swal from "sweetalert2";
+
 const ContactSection = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleEmailSend = async (e) => {
+    e.preventDefault();
+
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      to_email: "najafi.mohamad2021@gmail.com",
+      message: formData.message,
+    };
+
+    try {
+      const result = await emailjs.send(
+        "service_0lank0t",
+        "template_c359wn9",
+        templateParams,
+        "Eg0vSjsxOo4fy0_zG"
+      );
+      console.log(result.text);
+      setFormData({ name: "", email: "", message: "" });
+      Swal.fire({
+        icon: "success",
+        title: "Success!",
+        text: "Thanks, your message is sent successfully.",
+        confirmButtonText: "OK",
+        timer: 3000,
+        timerProgressBar: true,
+        customClass: {
+          popup: "sweet-alert-custom",
+        },
+      });
+    } catch (error) {
+      console.log(error.text);
+      Swal.fire({
+        icon: "error",
+        title: "Error!",
+        text: "Failed to send message. Please try again.",
+        confirmButtonText: "OK",
+        timer: 3000,
+        timerProgressBar: true,
+        customClass: {
+          popup: "sweet-alert-custom",
+        },
+      });
+    }
+  };
+
   return (
     <Fragment>
       {/* Section Contacts Info */}
@@ -66,18 +126,31 @@ const ContactSection = () => {
           </div>
           {/* form */}
           <div className="contact_form content-box">
-            <form id="cform" method="post">
+            <form id="cform" method="post" onSubmit={handleEmailSend}>
               <div className="group-val">
-                <input type="text" name="name" placeholder="Name" />
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  value={formData.name}
+                  onChange={handleInputChange}
+                />
               </div>
               <div className="group-val">
-                <input type="email" name="email" placeholder="Email" />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                />
               </div>
               <div className="group-val ct-gr">
                 <textarea
                   name="message"
                   placeholder="Message"
-                  defaultValue={""}
+                  value={formData.message}
+                  onChange={handleInputChange}
                 />
               </div>
               <div className="group-bts">
@@ -87,9 +160,6 @@ const ContactSection = () => {
                 </button>
               </div>
             </form>
-            <div className="alert-success">
-              <p>Thanks, your message is sent successfully.</p>
-            </div>
           </div>
         </div>
         <div className="clear" />
@@ -97,4 +167,5 @@ const ContactSection = () => {
     </Fragment>
   );
 };
+
 export default ContactSection;
