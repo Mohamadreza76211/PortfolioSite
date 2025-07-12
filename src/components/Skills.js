@@ -5,42 +5,48 @@ export const DesignSkills = () => {
   return (
     <div className="section skills" id="section-skills">
       <div className="content">
-        {/* title */}
         <div className="title">
-          <div className="title_inner">Design Skills</div>
+          <div className="title_inner">Front-End Development Skills</div>
         </div>
-        {/* skills items */}
         <div className="skills percent content-box">
           <ul>
             <li>
-              <div className="name">Web Design</div>
-              <div className="progress ">
+              <div className="name">React JS & Redux</div>
+              <div className="progress">
                 <div className="percentage" style={{ width: "90%" }}>
                   <span className="percent">90%</span>
                 </div>
               </div>
             </li>
             <li>
-              <div className="name">Illustrations</div>
-              <div className="progress ">
-                <div className="percentage" style={{ width: "70%" }}>
-                  <span className="percent">70%</span>
+              <div className="name">Material UI Implementation</div>
+              <div className="progress">
+                <div className="percentage" style={{ width: "85%" }}>
+                  <span className="percent">85%</span>
                 </div>
               </div>
             </li>
             <li>
-              <div className="name">Photoshop</div>
-              <div className="progress ">
+              <div className="name">Responsive & Cross-Device Design</div>
+              <div className="progress">
                 <div className="percentage" style={{ width: "95%" }}>
                   <span className="percent">95%</span>
                 </div>
               </div>
             </li>
             <li>
-              <div className="name">Graphic Design</div>
-              <div className="progress ">
-                <div className="percentage" style={{ width: "85%" }}>
-                  <span className="percent">85%</span>
+              <div className="name">Clean Code & Best Practices</div>
+              <div className="progress">
+                <div className="percentage" style={{ width: "88%" }}>
+                  <span className="percent">88%</span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div className="name">Progressive Web Application</div>
+              <div className="progress">
+                <div className="percentage" style={{ width: "78%" }}>
+                  <span className="percent">78%</span>
                 </div>
               </div>
             </li>
@@ -59,39 +65,21 @@ export const LanguagesSkills = () => {
   return (
     <div className="section skills" id="section-skills-lang">
       <div className="content">
-        {/* title */}
         <div className="title">
-          <div className="title_inner">Languages Skills</div>
+          <div className="title_inner">Language Skills</div>
         </div>
-        {/* skills items */}
         <div className="skills percent content-box">
           <ul>
             <li>
+              <div className="name">Persian</div>
+              <div className="progress">
+                <div className="percentage" style={{ width: "100%" }}>
+                  <span className="percent">100%</span>
+                </div>
+              </div>
+            </li>
+            <li>
               <div className="name">English</div>
-              <div className="progress">
-                <div className="percentage" style={{ width: "90%" }}>
-                  <span className="percent">90%</span>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div className="name">German</div>
-              <div className="progress">
-                <div className="percentage" style={{ width: "70%" }}>
-                  <span className="percent">70%</span>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div className="name">Italian</div>
-              <div className="progress">
-                <div className="percentage" style={{ width: "55%" }}>
-                  <span className="percent">55%</span>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div className="name">French</div>
               <div className="progress">
                 <div className="percentage" style={{ width: "85%" }}>
                   <span className="percent">85%</span>
@@ -109,18 +97,14 @@ export const CodingSkills = () => {
   return (
     <div className="section skills" id="section-skills-code">
       <div className="content">
-        {/* title */}
         <div className="title">
           <div className="title_inner">Coding Skills</div>
         </div>
-        {/* skills items */}
         <div className="skills circles content-box">
           <ul>
             <li>
-              <div className="name">WordPress</div>
+              <div className="name">React JS / Redux</div>
               <div className="progress p90">
-                {" "}
-                {/* p90 = 90% circle fill color */}
                 <div className="percentage">
                   <span className="percent">90%</span>
                 </div>
@@ -132,14 +116,12 @@ export const CodingSkills = () => {
               </div>
             </li>
             <li>
-              <div className="name">PHP / MYSQL</div>
-              <div className="progress p75">
-                {" "}
-                {/* p75 = 75% circle fill color */}
+              <div className="name">HTML5 / CSS3 / Sass</div>
+              <div className="progress p95">
                 <div className="percentage">
-                  <span className="percent">75%</span>
+                  <span className="percent">95%</span>
                 </div>
-                <span>75%</span>
+                <span>95%</span>
                 <div className="slice">
                   <div className="bar"></div>
                   <div className="fill"></div>
@@ -147,10 +129,8 @@ export const CodingSkills = () => {
               </div>
             </li>
             <li>
-              <div className="name">Angular / JavaScript</div>
+              <div className="name">JavaScript / Next JS</div>
               <div className="progress p85">
-                {" "}
-                {/* p85 = 85% circle fill color */}
                 <div className="percentage">
                   <span className="percent">85%</span>
                 </div>
@@ -162,14 +142,12 @@ export const CodingSkills = () => {
               </div>
             </li>
             <li>
-              <div className="name">HTML / CSS</div>
-              <div className="progress p95">
-                {" "}
-                {/* p95 = 95% circle fill color */}
+              <div className="name">Microsoft SQL Server</div>
+              <div className="progress p70">
                 <div className="percentage">
-                  <span className="percent">95%</span>
+                  <span className="percent">70%</span>
                 </div>
-                <span>95%</span>
+                <span>70%</span>
                 <div className="slice">
                   <div className="bar"></div>
                   <div className="fill"></div>
@@ -186,36 +164,34 @@ export const KnowledgeSkills = () => {
   return (
     <div className="section skills" id="section-skills-know">
       <div className="content">
-        {/* title */}
         <div className="title">
           <div className="title_inner">Knowledge</div>
         </div>
-        {/* skills */}
         <div className="skills list content-box">
           <ul>
             <li>
-              <div className="name">Website hosting</div>
+              <div className="name">Git Version Control</div>
             </li>
             <li>
-              <div className="name">iOS and android apps</div>
+              <div className="name">RESTful API Integration</div>
             </li>
             <li>
-              <div className="name">Create logo design</div>
+              <div className="name">Clean Code Principles</div>
             </li>
             <li>
-              <div className="name">Design for print</div>
+              <div className="name">Virtualization (Vsphere)</div>
             </li>
             <li>
-              <div className="name">Modern and mobile-ready</div>
+              <div className="name">Networking (CCNA & CCNP)</div>
             </li>
             <li>
-              <div className="name">Advertising services include</div>
+              <div className="name">Technical Documentation</div>
             </li>
             <li>
-              <div className="name">Graphics and animations</div>
+              <div className="name">Responsive Web Design</div>
             </li>
             <li>
-              <div className="name">Search engine marketing</div>
+              <div className="name">UX/UI Collaboration</div>
             </li>
           </ul>
         </div>

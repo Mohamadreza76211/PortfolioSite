@@ -17,17 +17,16 @@ const Pricing = () => {
               <div className="amount">
                 <span className="number">
                   <span className="dollar">$</span>
-                  <span>39</span>
-                  <span className="period">hour</span>
+                  <span>45</span>
+                  <span className="period">/ hour</span>
                 </span>
               </div>
               <div className="feature-list">
                 <ul>
-                  <li>Web Development</li>
-                  <li>Advetising</li>
-                  <li>Game Development</li>
-                  <li className="disable">Music Writing</li>
-                  <li className="disable">Photography</li>
+                  <li>Responsive Web Development</li>
+                  <li>UI Components with Material UI</li>
+                  <li className="disable">Progressive Web App (PWA)</li>
+                  <li className="disable">Next.js (SSR/SSG)</li>
                 </ul>
               </div>
               <div className="bts">
@@ -47,18 +46,17 @@ const Pricing = () => {
               <div className="amount">
                 <span className="number">
                   <span className="dollar">$</span>
-                  <span>59</span>
-                  <span className="period">hour</span>
+                  <span>70</span>
+                  <span className="period">/ hour</span>
                 </span>
               </div>
               <div className="feature-list">
                 <ul>
-                  <li>Web Development</li>
-                  <li>Advetising</li>
-                  <li>Game Development</li>
-                  <li>Music Writing</li>
+                  <li>Responsive Web Development</li>
+                  <li>UI Components with Material UI</li>
+                  <li>Progressive Web App (PWA)</li>
                   <li>
-                    Photography <strong>new</strong>
+                    Next.js (SSR/SSG) <strong>new</strong>
                   </li>
                 </ul>
               </div>

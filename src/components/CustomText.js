@@ -2,23 +2,25 @@ const CustomText = () => {
   return (
     <div className="section custom-text" id="section-custom-text">
       <div className="content">
-        {/* title */}
         <div className="title">
-          <div className="title_inner">Custom Text</div>
+          <div className="title_inner">Professional Summary</div>
         </div>
-        {/* clients items */}
         <div className="content-box">
           <div className="single-post-text">
             <p>
-              Now there is more fashion. There is no so-called trends. Now chase
-              after anything not necessary — nor for fashionable color nor the
-              shape, nor for style. Think about the content that you want to
-              invest in a created object, and only then will form. The thing is
-              your spirit. A spirit unlike forms hard copy.
+              As a dedicated Front-End Developer with over seven years of
+              experience, I specialize in crafting dynamic and responsive web
+              applications using React JS, Redux, and Material UI. My mission is
+              to streamline development processes, deliver high-quality
+              solutions, and drive innovation by leveraging clean code
+              principles and best practices.
             </p>
             <p>
-              Here choose yourself like that, without any looking back, do your
-              personal, home, small fashion, and all will be well.
+              I thrive in collaborative environments, working closely with UX/UI
+              designers and backend developers to create seamless user
+              experiences. Committed to continuous growth, I aim to infuse
+              energy and professionalism into every project, ensuring optimal
+              performance and user satisfaction.
             </p>
           </div>
         </div>
@@ -27,4 +29,5 @@ const CustomText = () => {
     </div>
   );
 };
+
 export default CustomText;

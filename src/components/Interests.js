@@ -2,20 +2,19 @@ const Interests = () => {
   return (
     <div className="section service" id="section-interests">
       <div className="content">
-        {/* title */}
         <div className="title">
           <div className="title_inner">Interests</div>
         </div>
-        {/* interests items */}
         <div className="service-items">
           <div className="service-col">
             <div className="service-item content-box">
               <div className="icon">
-                <span className="fas fa-baseball-ball" />
+                <span className="fas fa-futbol" />
               </div>
-              <div className="name">Basketball</div>
+              <div className="name">Football</div>
               <div className="text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Enjoy playing football to stay active and foster teamwork,
+                enhancing problem-solving skills through strategic gameplay.
               </div>
             </div>
           </div>
@@ -26,7 +25,8 @@ const Interests = () => {
               </div>
               <div className="name">Camping</div>
               <div className="text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Passionate about camping to connect with nature, promoting
+                resilience and adaptability in dynamic environments.
               </div>
             </div>
           </div>
@@ -37,7 +37,8 @@ const Interests = () => {
               </div>
               <div className="name">Chess</div>
               <div className="text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Enthusiastic about chess, which sharpens strategic thinking and
+                attention to detail, skills I apply in coding.
               </div>
             </div>
           </div>
@@ -48,7 +49,8 @@ const Interests = () => {
               </div>
               <div className="name">Music</div>
               <div className="text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Love exploring music to boost creativity and focus, often
+                listening to inspire innovative solutions in development.
               </div>
             </div>
           </div>
@@ -58,4 +60,5 @@ const Interests = () => {
     </div>
   );
 };
+
 export default Interests;

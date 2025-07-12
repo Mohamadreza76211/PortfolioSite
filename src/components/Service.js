@@ -15,68 +15,56 @@ const Service = () => {
               </div>
               <div className="name">Web Development</div>
               <div className="text">
-                Modern and mobile-ready website that will help you reach all of
-                your marketing.
+                Modern, responsive websites with React.js, optimized for
+                performance and usability.
               </div>
             </div>
           </div>
           <div className="service-col">
             <div className="service-item content-box">
               <div className="icon">
-                <span className="fas fa-music" />
+                <span className="fas fa-bolt" />
               </div>
-              <div className="name">Music Writing</div>
+              <div className="name">Progressive Web App (PWA)</div>
               <div className="text">
-                Music copying, writing, creating, transcription, arranging and
-                services.
+                Building installable, offline-ready web apps with PWA features
+                for enhanced UX.
               </div>
             </div>
           </div>
           <div className="service-col">
             <div className="service-item content-box">
               <div className="icon">
-                <span className="fas fa-ad" />
+                <span className="fas fa-layer-group" />
               </div>
-              <div className="name">Advetising</div>
+              <div className="name">Next.js Development</div>
               <div className="text">
-                Advertising services include television, radio, print, mail, and
-                web apps.
+                Creating SEO-friendly, SSR/SSG web apps using Next.js and modern
+                JavaScript stack.
               </div>
             </div>
           </div>
           <div className="service-col">
             <div className="service-item content-box">
               <div className="icon">
-                <span className="fas fa-gamepad" />
+                <span className="fas fa-tools" />
               </div>
-              <div className="name">Game Development</div>
+              <div className="name">UI Component Design</div>
               <div className="text">
-                Developing memorable and unique mobile android, ios and video
-                games.
+                Crafting clean, reusable UI components with Material UI and
+                Tailwind CSS.
               </div>
             </div>
           </div>
           <div className="service-col">
             <div className="service-item content-box">
               <div className="icon">
-                <span className="fas fa-camera" />
+                <span className="fas fa-shield-alt" />
               </div>
-              <div className="name">Photography</div>
+              <div className="name">Clean Code & Optimization</div>
               <div className="text">
-                Our in-house photography services team made up of professional
-                photographers.
-              </div>
-            </div>
-          </div>
-          <div className="service-col">
-            <div className="service-item content-box">
-              <div className="icon">
-                <span className="fas fa-mobile-alt" />
-              </div>
-              <div className="name">Android Application</div>
-              <div className="text">
-                Games, playing music, handle network transactions, interacting
-                content etc.
+                Writing maintainable, efficient, and scalable code with modern
+                best practices.
               </div>
             </div>
           </div>

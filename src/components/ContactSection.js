@@ -17,7 +17,7 @@ const ContactSection = () => {
                   <span className="fas fa-phone" />
                 </div>
                 <div className="name">Phone</div>
-                <div className="text">+ (231) 456 67 89</div>
+                <div className="text">+98 (921) 346 91 31</div>
               </div>
             </div>
             <div className="service-col">
@@ -28,7 +28,7 @@ const ContactSection = () => {
                 <div className="name">Email</div>
                 <div className="text">
                   <a href="mailto:steve-pearson@gmail.com">
-                    steve-pearson@gmail.com
+                    najafi.mohamad2021@gmail.com
                   </a>
                 </div>
               </div>
@@ -39,7 +39,9 @@ const ContactSection = () => {
                   <span className="fas fa-map-marker-alt" />
                 </div>
                 <div className="name">Address</div>
-                <div className="text">2621 W Pico Blvd, Los Angeles</div>
+                <div className="text">
+                  No. 14 Morvarid St, Saadat Abad, Tehran, Iran
+                </div>
               </div>
             </div>
             <div className="service-col">
