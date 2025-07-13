@@ -81,67 +81,7 @@ const ItemIsotope = () => {
               onClick={handleFilterKeyChange("box-item")}
             >
               <input type="radio" name="fl_radio" defaultValue=".box-item" />
-              All
-            </label>
-          </div>
-          <div className="btn-group">
-            <label
-              className={`c-pointer ${activeBtn("f-video")}`}
-              onClick={handleFilterKeyChange("f-video")}
-              data-text="Video"
-            >
-              <input type="radio" name="fl_radio" defaultValue=".f-video" />
-              Video
-            </label>
-          </div>
-          <div className="btn-group">
-            <label
-              className={`c-pointer ${activeBtn("f-music")}`}
-              onClick={handleFilterKeyChange("f-music")}
-              data-text="Music"
-            >
-              <input type="radio" name="fl_radio" defaultValue=".f-music" />
-              Music
-            </label>
-          </div>
-          <div className="btn-group">
-            <label
-              className={`c-pointer ${activeBtn("f-links")}`}
-              onClick={handleFilterKeyChange("f-links")}
-              data-text="Links"
-            >
-              <input type="radio" name="fl_radio" defaultValue=".f-links" />
-              Links
-            </label>
-          </div>
-          <div className="btn-group">
-            <label
-              className={`c-pointer ${activeBtn("f-image")}`}
-              onClick={handleFilterKeyChange("f-image")}
-              data-text="Image"
-            >
-              <input type="radio" name="fl_radio" defaultValue=".f-image" />
-              Image
-            </label>
-          </div>
-          <div className="btn-group">
-            <label
-              className={`c-pointer ${activeBtn("f-gallery")}`}
-              onClick={handleFilterKeyChange("f-gallery")}
-              data-text="Gallery"
-            >
-              <input type="radio" name="fl_radio" defaultValue=".f-gallery" />
-              Gallery
-            </label>
-          </div>
-          <div className="btn-group">
-            <label
-              className={`c-pointer ${activeBtn("f-content")}`}
-              onClick={handleFilterKeyChange("f-content")}
-              data-text="Content"
-            >
-              <input type="radio" name="fl_radio" defaultValue=".f-content" />
-              Content
+              Some Projects
             </label>
           </div>
         </div>

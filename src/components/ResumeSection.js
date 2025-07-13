@@ -52,9 +52,7 @@ const ResumeSection = () => {
               </div>
               <div className="resume-item content-box">
                 <div className="date">Certified</div>
-                <div className="name">
-                  CCNA – Cisco | English – Cambridge University
-                </div>
+                <div className="name"> English – Cambridge University</div>
                 <div className="text">
                   Achieved Cisco CCNA certification and Cambridge Movers &
                   Flyers English certifications. Published article:

@@ -2,7 +2,7 @@ import About from "../src/components/About";
 import Clients from "../src/components/Clients";
 import CustomText from "../src/components/CustomText";
 import Interests from "../src/components/Interests";
-import { DefaultPageBanner } from "../src/components/PageBanner";
+import { ImagePageBanner } from "../src/components/PageBanner";
 import Pricing from "../src/components/Pricing";
 import ResumeSection from "../src/components/ResumeSection";
 import Service from "../src/components/Service";
@@ -12,6 +12,8 @@ import {
   KnowledgeSkills,
   LanguagesSkills,
 } from "../src/components/Skills";
+import Team from "../src/components/Team";
+import Testimonials from "../src/components/Testimonials";
 import Layout from "../src/layout/Layout";
 const Resume = () => {
   const typingAnimation = [
@@ -20,7 +22,7 @@ const Resume = () => {
   return (
     <Layout>
       {/* Section Started */}
-      <DefaultPageBanner pageName={"Resume"} typingData={typingAnimation} />
+      <ImagePageBanner pageName={"Resume"} typingData={typingAnimation} />
       {/* Section About */}
       <About />
       {/* Section Service */}
@@ -39,8 +41,12 @@ const Resume = () => {
       <KnowledgeSkills />
       {/* Section Interests */}
       <Interests />
+      {/* Section Team */}
+      {/* <Team /> */}
+      {/* Section Testimonials */}
+      {/* <Testimonials /> */}
       {/* Section Clients */}
-      <Clients />
+      {/* <Clients /> */}
       {/* Section Custom Text */}
       <CustomText />
     </Layout>

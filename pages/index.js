@@ -15,7 +15,7 @@ const Index = () => {
             <div className="started-content">
               <div
                 className="logo"
-                style={{ backgroundImage: "url(images/man.jpg)" }}
+                style={{ backgroundImage: "url(images/MyPic.jpg)" }}
               />
               <h1 className="h-title">
                 Hello, I’m <strong>Mohammadreza Haji Najafi</strong>,

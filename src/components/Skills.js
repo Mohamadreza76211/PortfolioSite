@@ -27,6 +27,14 @@ export const DesignSkills = () => {
               </div>
             </li>
             <li>
+              <div className="name">Tailwind CSS</div>
+              <div className="progress">
+                <div className="percentage" style={{ width: "82%" }}>
+                  <span className="percent">82%</span>
+                </div>
+              </div>
+            </li>
+            <li>
               <div className="name">Responsive & Cross-Device Design</div>
               <div className="progress">
                 <div className="percentage" style={{ width: "95%" }}>
@@ -56,6 +64,7 @@ export const DesignSkills = () => {
     </div>
   );
 };
+
 export const LanguagesSkills = () => {
   useEffect(() => {
     dotResize();
@@ -116,12 +125,12 @@ export const CodingSkills = () => {
               </div>
             </li>
             <li>
-              <div className="name">HTML5 / CSS3 / Sass</div>
-              <div className="progress p95">
+              <div className="name">JavaScript / Next JS</div>
+              <div className="progress p85">
                 <div className="percentage">
-                  <span className="percent">95%</span>
+                  <span className="percent">85%</span>
                 </div>
-                <span>95%</span>
+                <span>85%</span>
                 <div className="slice">
                   <div className="bar"></div>
                   <div className="fill"></div>
@@ -129,12 +138,12 @@ export const CodingSkills = () => {
               </div>
             </li>
             <li>
-              <div className="name">JavaScript / Next JS</div>
-              <div className="progress p85">
+              <div className="name">Tailwind CSS</div>
+              <div className="progress p82">
                 <div className="percentage">
-                  <span className="percent">85%</span>
+                  <span className="percent">82%</span>
                 </div>
-                <span>85%</span>
+                <span>82%</span>
                 <div className="slice">
                   <div className="bar"></div>
                   <div className="fill"></div>
@@ -160,6 +169,7 @@ export const CodingSkills = () => {
     </div>
   );
 };
+
 export const KnowledgeSkills = () => {
   return (
     <div className="section skills" id="section-skills-know">
@@ -177,6 +187,9 @@ export const KnowledgeSkills = () => {
             </li>
             <li>
               <div className="name">Clean Code Principles</div>
+            </li>
+            <li>
+              <div className="name">Tailwind CSS Framework</div>
             </li>
             <li>
               <div className="name">Virtualization (Vsphere)</div>

@@ -78,7 +78,7 @@ const Menu = () => (
                 </li>
               </ul>
             </li>
-            <li className="menu-item menu-item-has-children">
+            {/* <li className="menu-item menu-item-has-children">
               <Link href="/blog">
                 <a>
                   <span className="mask-lnk">Blog</span>
@@ -96,7 +96,7 @@ const Menu = () => (
                     </a>
                   </Link>
                 </li>
-                {/* <li className="menu-item">
+                <li className="menu-item">
                   <Link href="/blog_post">
                     <a>
                       <span className="mask-lnk">Single Post</span>
@@ -105,9 +105,9 @@ const Menu = () => (
                       </span>
                     </a>
                   </Link>
-                </li> */}
+                </li>
               </ul>
-            </li>
+            </li> */}
             <li className="menu-item menu-item-has-children">
               <Link href="/contacts">
                 <a>

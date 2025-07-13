@@ -20,6 +20,7 @@ const Service = () => {
               </div>
             </div>
           </div>
+
           <div className="service-col">
             <div className="service-item content-box">
               <div className="icon">
@@ -32,6 +33,7 @@ const Service = () => {
               </div>
             </div>
           </div>
+
           <div className="service-col">
             <div className="service-item content-box">
               <div className="icon">
@@ -44,6 +46,7 @@ const Service = () => {
               </div>
             </div>
           </div>
+
           <div className="service-col">
             <div className="service-item content-box">
               <div className="icon">
@@ -56,6 +59,7 @@ const Service = () => {
               </div>
             </div>
           </div>
+
           <div className="service-col">
             <div className="service-item content-box">
               <div className="icon">
@@ -68,10 +72,76 @@ const Service = () => {
               </div>
             </div>
           </div>
+
+          <div className="service-col">
+            <div className="service-item content-box">
+              <div className="icon">
+                <span className="fas fa-database" />
+              </div>
+              <div className="name">Admin Panel Development</div>
+              <div className="text">
+                Building custom admin dashboards with Material UI, focused on
+                functionality and usability.
+              </div>
+            </div>
+          </div>
+
+          <div className="service-col">
+            <div className="service-item content-box">
+              <div className="icon">
+                <span className="fas fa-comments" />
+              </div>
+              <div className="name">Chat App Development</div>
+              <div className="text">
+                Creating secure and scalable chat systems with React and modern
+                async communication techniques.
+              </div>
+            </div>
+          </div>
+
+          <div className="service-col">
+            <div className="service-item content-box">
+              <div className="icon">
+                <span className="fas fa-sitemap" />
+              </div>
+              <div className="name">Design Patterns & Architecture</div>
+              <div className="text">
+                Applying clean architecture and proven design patterns to
+                improve software maintainability.
+              </div>
+            </div>
+          </div>
+
+          <div className="service-col">
+            <div className="service-item content-box">
+              <div className="icon">
+                <span className="fas fa-book" />
+              </div>
+              <div className="name">Technical Documentation</div>
+              <div className="text">
+                Writing detailed, maintainable technical docs for projects and
+                development processes.
+              </div>
+            </div>
+          </div>
+
+          <div className="service-col">
+            <div className="service-item content-box">
+              <div className="icon">
+                <span className="fas fa-code-branch" />
+              </div>
+              <div className="name">Version Control with Git</div>
+              <div className="text">
+                Effective use of Git for version control, team collaboration,
+                and CI/CD integration.
+              </div>
+            </div>
+          </div>
         </div>
         <div className="clear" />
       </div>
     </div>
   );
 };
+
 export default Service;
