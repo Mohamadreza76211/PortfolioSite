@@ -1,20 +1,60 @@
 import Isotope from "isotope-layout";
 import Link from "next/link";
+import Image from "next/image";
 import { Fragment, useEffect, useRef, useState } from "react";
 import { parallax } from "../utils";
+
+const items = [
+  {
+    href: "/projects/hamsoo",
+    src: "/images/Hamsoo.png",
+    alt: "Hamsoo",
+    category: "Gallery",
+    name: "Hamsoo",
+    icon: "fas fa-images",
+    className: "f-gallery",
+  },
+  {
+    href: "/projects/desna",
+    src: "/images/Desna.png",
+    alt: "Desna",
+    category: "Links",
+    name: "Desna",
+    icon: "fas fa-link",
+    className: "f-links",
+  },
+  {
+    href: "/projects/ghajari",
+    src: "/images/Ghajari.png",
+    alt: "Ghajari",
+    category: "Video",
+    name: "Ghajari restaurant",
+    icon: "fas fa-video",
+    className: "f-video",
+  },
+  {
+    href: "/projects/homa",
+    src: "/images/Homa.png",
+    alt: "Homa",
+    category: "Image",
+    name: "Homa Agency",
+    icon: "fas fa-image",
+    className: "f-image",
+  },
+];
+
 const ItemIsotope = () => {
   useEffect(() => {
     parallax();
   }, []);
 
-  // Isotope
   const isotope = useRef();
   const [filterKey, setFilterKey] = useState("box-item");
+
   useEffect(() => {
     setTimeout(() => {
       isotope.current = new Isotope(".portfolio-items", {
         itemSelector: ".box-item",
-        //    layoutMode: "fitRows",
         percentPosition: true,
         masonry: {
           columnWidth: ".box-item",
@@ -26,8 +66,8 @@ const ItemIsotope = () => {
         },
       });
     }, 1000);
-    //     return () => isotope.current.destroy();
   }, []);
+
   useEffect(() => {
     if (isotope.current) {
       filterKey === "*"
@@ -35,6 +75,7 @@ const ItemIsotope = () => {
         : isotope.current.arrange({ filter: `.${filterKey}` });
     }
   }, [filterKey]);
+
   const handleFilterKeyChange = (key) => () => {
     setFilterKey(key);
   };
@@ -44,20 +85,11 @@ const ItemIsotope = () => {
     const circle = document.querySelectorAll(".circle");
     circle.forEach((e) => {
       e.addEventListener("mouseenter", (m) => {
-        console.log(
-          m.pageY,
-          e.offsetParent.offsetParent.offsetParent.offsetParent.offsetLeft,
-          e.offsetTop
-        );
         if (!e.getElementsByClassName("ink")[0]) {
           const span = document.createElement("span");
           span.classList.add("ink");
           e.appendChild(span);
           span.classList.add("ink-animate");
-          // span.style.height = `${e.clientHeight}px`;
-          // span.style.width = `${e.clientWidth}px`;
-          // span.style.top = `${m.pageY - e.offsetTop - e.clientHeight / 2}px`;
-          // span.style.left = `${m.pageX - e.offsetLeft - e.clientWidth / 2}px`;
         }
       });
       e.addEventListener("mouseleave", (m) => {
@@ -71,8 +103,8 @@ const ItemIsotope = () => {
 
   return (
     <Fragment>
-      {/* portfolio filter */}
-      <div className="filter-menu content-box">
+      {/* Filter menu */}
+      <div className="filter-menu content-box mb-8">
         <div className="filters">
           <div className="btn-group">
             <label
@@ -86,233 +118,48 @@ const ItemIsotope = () => {
           </div>
         </div>
       </div>
-      {/* portfolio items */}
+
+      {/* Portfolio items */}
       <div className="box-items portfolio-items">
-        <div className="box-item f-gallery">
-          {" "}
-          {/* add class "animate-to-page" if need animated transition to page and delete target="_blank" rel="noreferrer" */}
-          <div className="image">
-            <a href="#gallery-1" className="has-popup-gallery hover-animated">
-              <img src="images/work1.jpg" className="wp-post-image" alt="" />
-              <span className="info circle">
-                <span className="centrize full-width">
-                  <span className="vertical-center">
-                    <span className="icon fas fa-images" />
-                    <span className="desc">
-                      <span className="category">Gallery</span>
-                      <span className="name">Shot in Iceland</span>
+        {items.map((item, idx) => (
+          <div
+            key={idx}
+            className={`box-item ${item.className} relative`}
+            style={{ marginTop: `${idx * 100}px` }}
+          >
+            <div className="image cursor-pointer overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+              <Link href={item.href}>
+                <a>
+                  <Image
+                    src={item.src}
+                    alt={item.alt}
+                    width={400}
+                    height={300}
+                    className="w-full h-auto object-contain"
+                  />
+                  <span className="info circle absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <span className="centrize w-full">
+                      <span className="vertical-center text-white text-center">
+                        <i className={`icon ${item.icon} text-2xl mb-2`} />
+                        <div className="desc">
+                          <div className="category text-sm font-semibold">
+                            {item.category}
+                          </div>
+                          <div className="name text-lg font-bold">
+                            {item.name}
+                          </div>
+                        </div>
+                      </span>
                     </span>
                   </span>
-                </span>
-              </span>
-            </a>
-            <div id="gallery-1" className="mfp-hide">
-              <a href="images/work1.jpg" />
-              <a href="images/work2.jpg" />
-              <a href="images/work3.jpg" />
-              <a href="images/work4.jpg" />
+                </a>
+              </Link>
             </div>
           </div>
-        </div>
-        <div className="box-item f-links">
-          <div className="image">
-            <a
-              href="https://google.com/"
-              className="has-popup-link hover-animated"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src="images/work3.jpg" className="wp-post-image" alt="" />
-              <span className="info circle">
-                <span className="centrize full-width">
-                  <span className="vertical-center">
-                    <span className="icon fas fa-link" />
-                    <span className="desc">
-                      <span className="category">Links</span>
-                      <span className="name">Nike Red</span>
-                    </span>
-                  </span>
-                </span>
-              </span>
-            </a>
-          </div>
-        </div>
-        <div className="box-item f-video">
-          <div className="image">
-            <a
-              href="https://www.youtube.com/embed/S4L8T2kFFck"
-              className="has-popup-video hover-animated"
-            >
-              <img src="images/work2.jpg" className="wp-post-image" alt="" />
-              <span className="info circle">
-                <span className="centrize full-width">
-                  <span className="vertical-center">
-                    <span className="icon fas fa-video" />
-                    <span className="desc">
-                      <span className="category">Video</span>
-                      <span className="name">Fertility of Some Plants</span>
-                    </span>
-                  </span>
-                </span>
-              </span>
-            </a>
-          </div>
-        </div>
-        <div className="box-item f-image">
-          <div className="image">
-            <a
-              href="images/work4.jpg"
-              className="has-popup-image hover-animated"
-            >
-              <img src="images/work4.jpg" className="wp-post-image" alt="" />
-              <span className="info circle">
-                <span className="centrize full-width">
-                  <span className="vertical-center">
-                    <span className="icon fas fa-image" />
-                    <span className="desc">
-                      <span className="category">Image</span>
-                      <span className="name">Inspiration in Cap Haitian</span>
-                    </span>
-                  </span>
-                </span>
-              </span>
-            </a>
-          </div>
-        </div>
-        <div className="box-item f-image">
-          <div className="image">
-            <a
-              href="images/work7.jpg"
-              className="has-popup-image hover-animated"
-            >
-              <img src="images/work7.jpg" className="wp-post-image" alt="" />
-              <span className="info circle">
-                <span className="centrize full-width">
-                  <span className="vertical-center">
-                    <span className="icon fas fa-image" />
-                    <span className="desc">
-                      <span className="category">Image</span>
-                      <span className="name">Water and Shore</span>
-                    </span>
-                  </span>
-                </span>
-              </span>
-            </a>
-          </div>
-        </div>
-        <div className="box-item f-music">
-          <div className="image">
-            <a
-              href="https://w.soundcloud.com/player/?visual=true&url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F221650664&show_artwork=true"
-              className="has-popup-music hover-animated"
-            >
-              <img src="images/work6.jpg" className="wp-post-image" alt="" />
-              <span className="info circle">
-                <span className="centrize full-width">
-                  <span className="vertical-center">
-                    <span className="icon fas fa-music" />
-                    <span className="desc">
-                      <span className="category">Music</span>
-                      <span className="name">Dark Bike</span>
-                    </span>
-                  </span>
-                </span>
-              </span>
-            </a>
-          </div>
-        </div>
-        <div className="box-item f-gallery">
-          <div className="image">
-            <a href="#gallery-2" className="has-popup-gallery hover-animated">
-              <img src="images/work5.jpg" className="wp-post-image" alt="" />
-              <span className="info circle">
-                <span className="centrize full-width">
-                  <span className="vertical-center">
-                    <span className="icon fas fa-images" />
-                    <span className="desc">
-                      <span className="category">Gallery</span>
-                      <span className="name">Undulating Space</span>
-                    </span>
-                  </span>
-                </span>
-              </span>
-            </a>
-            <div id="gallery-2" className="mfp-hide">
-              <a href="images/work5.jpg" />
-              <a href="images/work1.jpg" />
-              <a href="images/work2.jpg" />
-              <a href="images/work3.jpg" />
-            </div>
-          </div>
-        </div>
-        <div className="box-item f-content">
-          <div className="image">
-            <a href="#popup-1" className="has-popup-media hover-animated">
-              <img src="images/work8.jpg" className="wp-post-image" alt="" />
-              <span className="info circle">
-                <span className="centrize full-width">
-                  <span className="vertical-center">
-                    <span className="icon fas fa-plus" />
-                    <span className="desc">
-                      <span className="category">Content</span>
-                      <span className="name">Curved Ceiling Ribs</span>
-                    </span>
-                  </span>
-                </span>
-              </span>
-            </a>
-          </div>
-          <div id="popup-1" className="popup-box mfp-fade mfp-hide">
-            <div className="content">
-              <div
-                className="image"
-                style={{ backgroundImage: "url(images/work8.jpg)" }}
-              />
-              <div className="desc single-post-text">
-                <div className="category">Content</div>
-                <h4>Hand holding pyramid painting</h4>
-                <p>
-                  Now there is more fashion. There is no so-called trends. Now
-                  chase after anything not necessary — nor for fashionable color
-                  nor the shape, nor for style. Think about the content that you
-                  want to invest in a created object, and only then will form.
-                  The thing is your spirit. A spirit unlike forms hard copy.
-                </p>
-                <ul>
-                  <li>
-                    Now there is more fashion. There is no so-called trends.
-                  </li>
-                  <li>
-                    Now chase after anything not necessary — nor for fashionable
-                    color nor the shape, nor for style.
-                  </li>
-                  <li>
-                    Think about the content that you want to invest in a created
-                    object, and only then will form.
-                  </li>
-                  <li>
-                    The thing is your spirit. A spirit unlike forms hard copy.
-                  </li>
-                </ul>
-                <p>
-                  Now there is more fashion. There is no so-called trends. Now
-                  chase after anything not necessary — nor for fashionable color
-                  nor the shape, nor for style. Think about the content that you
-                  want to invest in a created object, and only then will form.
-                  The thing is your spirit. A spirit unlike forms hard copy.
-                </p>
-                <Link href="/works_single_1">
-                  <a className="btn hover-animated">
-                    <span className="circle" />
-                    <span className="lnk">View Project</span>
-                  </a>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
     </Fragment>
   );
 };
+
 export default ItemIsotope;
