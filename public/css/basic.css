@@ -85,6 +85,7 @@ body.scroll_hidden {
 		display: none;
 	}
 }
+
 /* - Preloader */
 .preloader {
 	position: fixed;
@@ -95,6 +96,7 @@ body.scroll_hidden {
 	text-align: center;
 	z-index: 11111;
 }
+
 .preloader .spinner {
 	position: absolute;
 	left: 50%;
@@ -102,13 +104,16 @@ body.scroll_hidden {
 	width: 1px;
 	height: 100%;
 }
-.preloader .spinner .double-bounce1, .preloader .spinner .double-bounce2 {
+
+.preloader .spinner .double-bounce1,
+.preloader .spinner .double-bounce2 {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 }
+
 .preloader .spinner .double-bounce2 {
 	background: rgba(255, 255, 255, 0.5);
 	height: 0;
@@ -138,6 +143,7 @@ body.scroll_hidden {
 	pointer-events: none;
 	z-index: 1111;
 }
+
 .lines.no-lines .line-col:before {
 	opacity: 0;
 }
@@ -307,6 +313,7 @@ body.scroll_hidden {
 		display: none;
 	}
 }
+
 @media (max-width: 720px) {
 	.lines .line-col {
 		width: 50%;
@@ -318,6 +325,7 @@ body.scroll_hidden {
 		display: none;
 	}
 }
+
 /* - Columns */
 .cols {
 	position: relative;
@@ -333,6 +341,7 @@ body.scroll_hidden {
 		width: 100%;
 	}
 }
+
 .cols .col.col-lg {
 	float: left;
 	width: 75%;
@@ -343,6 +352,7 @@ body.scroll_hidden {
 		width: 100%;
 	}
 }
+
 .cols .col.col-md {
 	float: left;
 	width: 50%;
@@ -353,6 +363,7 @@ body.scroll_hidden {
 		width: 100%;
 	}
 }
+
 .cols:after {
 	content: '';
 	display: block;
@@ -437,6 +448,7 @@ strong {
 		margin: 20px 0;
 	}
 }
+
 /* - Links */
 a {
 	color: #eee;
@@ -501,7 +513,8 @@ a:hover {
 }
 
 a.btn,
-.btn, .single-post-text input[type="submit"] {
+.btn,
+.single-post-text input[type="submit"] {
 	margin-bottom: 10px;
 	position: relative;
 	overflow: hidden;
@@ -538,10 +551,14 @@ a.btn:hover,
 }
 
 @media screen and (max-width: 720px) {
-	a.btn, .btn, .single-post-text input[type="submit"] {
+
+	a.btn,
+	.btn,
+	.single-post-text input[type="submit"] {
 		font-size: 14px;
 	}
 }
+
 /* - Forms */
 form.post-password-form {
 	max-width: 400px;
@@ -705,7 +722,8 @@ input[type="radio"] {
 	display: inline;
 }
 
-input[type="checkbox"], input[type="radio"] {
+input[type="checkbox"],
+input[type="radio"] {
 	width: auto;
 	height: auto;
 	margin-bottom: 10px;
@@ -767,7 +785,10 @@ ol {
 	list-style-position: inside;
 }
 
-ul ul, ol ol, ul ol, ol ul {
+ul ul,
+ol ol,
+ul ol,
+ol ul {
 	margin-top: 15px;
 	margin-bottom: 15px;
 	margin-left: 15px;
@@ -797,7 +818,8 @@ pre {
 	white-space: pre;
 }
 
-mark, ins {
+mark,
+ins {
 	background: #eee;
 	text-decoration: none;
 }
@@ -909,9 +931,11 @@ dd {
 }
 
 .centrize {
-	display: table !important;
+	display: flex !important;
+	flex-direction: column !important;
+	justify-content: flex-end !important;
 	table-layout: fixed !important;
-	height: 100% !important;
+	height: 50% !important;
 	position: relative !important;
 	top: 0;
 	left: 0;
@@ -961,62 +985,74 @@ blockquote {
 		top: 0;
 		bottom: auto;
 	}
+
 	50% {
 		height: 100%;
 		top: 0;
 		bottom: auto;
 	}
+
 	51% {
 		height: 100%;
 		top: 0;
 		bottom: auto;
 	}
+
 	52% {
 		height: 100%;
 		top: auto;
 		bottom: 0;
 	}
+
 	100% {
 		height: 0;
 		top: auto;
 		bottom: 0;
 	}
 }
+
 @keyframes loading {
 	0% {
 		height: 0;
 		top: 0;
 		bottom: auto;
 	}
+
 	50% {
 		height: 100%;
 		top: 0;
 		bottom: auto;
 	}
+
 	51% {
 		height: 100%;
 		top: 0;
 		bottom: auto;
 	}
+
 	52% {
 		height: 100%;
 		top: auto;
 		bottom: 0;
 	}
+
 	100% {
 		height: 0;
 		top: auto;
 		bottom: 0;
 	}
 }
+
 /* Mouse Button Animations */
 @keyframes mouse-anim {
 	0% {
 		top: 0px;
 	}
+
 	50% {
 		top: 10px;
 	}
+
 	100% {
 		top: 0px;
 	}

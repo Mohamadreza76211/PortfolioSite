@@ -4,52 +4,13 @@ import Image from "next/image";
 import { Fragment, useEffect, useRef, useState } from "react";
 import { parallax } from "../utils";
 
-const items = [
-  {
-    href: "/projects/hamsoo",
-    src: "/images/Hamsoo.png",
-    alt: "Hamsoo",
-    category: "Gallery",
-    name: "Hamsoo",
-    icon: "fas fa-images",
-    className: "f-gallery",
-  },
-  {
-    href: "/projects/desna",
-    src: "/images/Desna.png",
-    alt: "Desna",
-    category: "Links",
-    name: "Desna",
-    icon: "fas fa-link",
-    className: "f-links",
-  },
-  {
-    href: "/projects/ghajari",
-    src: "/images/Ghajari.png",
-    alt: "Ghajari",
-    category: "Video",
-    name: "Ghajari restaurant",
-    icon: "fas fa-video",
-    className: "f-video",
-  },
-  {
-    href: "/projects/homa",
-    src: "/images/Homa.png",
-    alt: "Homa",
-    category: "Image",
-    name: "Homa Agency",
-    icon: "fas fa-image",
-    className: "f-image",
-  },
-];
-
 const ItemIsotope = () => {
+  const isotope = useRef();
+  const [filterKey, setFilterKey] = useState("box-item");
+
   useEffect(() => {
     parallax();
   }, []);
-
-  const isotope = useRef();
-  const [filterKey, setFilterKey] = useState("box-item");
 
   useEffect(() => {
     setTimeout(() => {
@@ -79,12 +40,13 @@ const ItemIsotope = () => {
   const handleFilterKeyChange = (key) => () => {
     setFilterKey(key);
   };
+
   const activeBtn = (value) => (value === filterKey ? "glitch-effect" : "");
 
   useEffect(() => {
     const circle = document.querySelectorAll(".circle");
     circle.forEach((e) => {
-      e.addEventListener("mouseenter", (m) => {
+      e.addEventListener("mouseenter", () => {
         if (!e.getElementsByClassName("ink")[0]) {
           const span = document.createElement("span");
           span.classList.add("ink");
@@ -92,8 +54,8 @@ const ItemIsotope = () => {
           span.classList.add("ink-animate");
         }
       });
-      e.addEventListener("mouseleave", (m) => {
-        const span = document.querySelector(".ink");
+      e.addEventListener("mouseleave", () => {
+        const span = e.querySelector(".ink");
         if (span) {
           span.classList.remove("ink-animate");
         }
@@ -103,7 +65,6 @@ const ItemIsotope = () => {
 
   return (
     <Fragment>
-      {/* Filter menu */}
       <div className="filter-menu content-box mb-8">
         <div className="filters">
           <div className="btn-group">
@@ -118,48 +79,134 @@ const ItemIsotope = () => {
           </div>
         </div>
       </div>
-
-      {/* Portfolio items */}
       <div className="box-items portfolio-items">
-        {items.map((item, idx) => (
-          <div
-            key={idx}
-            className={`box-item ${item.className} relative`}
-            style={{ marginTop: `${idx * 100}px` }}
-          >
-            <div className="image cursor-pointer overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
-              <Link href={item.href}>
-                <a>
-                  <Image
-                    src={item.src}
-                    alt={item.alt}
-                    width={400}
-                    height={300}
-                    className="w-full h-auto object-contain"
-                  />
-                  <span className="info circle absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 opacity-0 hover:opacity-100 transition-opacity duration-300">
-                    <span className="centrize w-full">
-                      <span className="vertical-center text-white text-center">
-                        <i className={`icon ${item.icon} text-2xl mb-2`} />
-                        <div className="desc">
-                          <div className="category text-sm font-semibold">
-                            {item.category}
-                          </div>
-                          <div className="name text-lg font-bold">
-                            {item.name}
-                          </div>
+        <div className="box-item f-links relative" style={{ marginTop: "0px" }}>
+          <div className="image cursor-pointer overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+            <Link href="https://hamsoo.bvt.ir/">
+              <a target="_blank" rel="noopener noreferrer">
+                <Image
+                  src="/images/Hamsoo.png"
+                  alt="Hamsoo"
+                  width={400}
+                  height={300}
+                  className="w-full h-auto object-contain"
+                />
+                <span className="info circle absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 opacity-0 hover:opacity-100 transition-opacity duration-300">
+                  <span className="centrize w-full">
+                    <span className="vertical-center text-white text-center">
+                      <i className="icon fas fa-link text-2xl mb-2" />
+                      <div className="desc">
+                        <div className="category text-sm font-semibold">
+                          Gallery
                         </div>
-                      </span>
+                        <div className="name text-lg font-bold">Hamsoo</div>
+                      </div>
                     </span>
                   </span>
-                </a>
-              </Link>
-            </div>
+                </span>
+              </a>
+            </Link>
           </div>
-        ))}
+        </div>
+        <div
+          className="box-item f-links relative"
+          style={{ marginTop: "100px" }}
+        >
+          <div className="image cursor-pointer overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+            <Link href="https://desna.ir/?lang=en">
+              <a target="_blank" rel="noopener noreferrer">
+                <Image
+                  src="/images/Desna.png"
+                  alt="Desna"
+                  width={400}
+                  height={300}
+                  className="w-full h-auto object-contain"
+                />
+                <span className="info circle absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 opacity-0 hover:opacity-100 transition-opacity duration-300">
+                  <span className="centrize w-full">
+                    <span className="vertical-center text-white text-center">
+                      <i className="icon fas fa-link text-2xl mb-2" />
+                      <div className="desc">
+                        <div className="category text-sm font-semibold">
+                          Links
+                        </div>
+                        <div className="name text-lg font-bold">Desna</div>
+                      </div>
+                    </span>
+                  </span>
+                </span>
+              </a>
+            </Link>
+          </div>
+        </div>
+        <div
+          className="box-item f-links relative"
+          style={{ marginTop: "200px" }}
+        >
+          <div className="image cursor-pointer overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+            <Link href="https://ghajarifood.com/">
+              <a target="_blank" rel="noopener noreferrer">
+                <Image
+                  src="/images/Ghajari.png"
+                  alt="Ghajari"
+                  width={400}
+                  height={300}
+                  className="w-full h-auto object-contain"
+                />
+                <span className="info circle absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 opacity-0 hover:opacity-100 transition-opacity duration-300">
+                  <span className="centrize w-full">
+                    <span className="vertical-center text-white text-center">
+                      <i className="icon fas fa-link text-2xl mb-2" />
+                      <div className="desc">
+                        <div className="category text-sm font-semibold">
+                          Video
+                        </div>
+                        <div className="name text-lg font-bold">
+                          Ghajari restaurant
+                        </div>
+                      </div>
+                    </span>
+                  </span>
+                </span>
+              </a>
+            </Link>
+          </div>
+        </div>
+        <div
+          className="box-item f-links relative"
+          style={{ marginTop: "300px" }}
+        >
+          <div className="image cursor-pointer overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+            <Link href="https://royaljeans.ir/">
+              <a target="_blank" rel="noopener noreferrer">
+                <Image
+                  src="/images/RoyalJeans.png"
+                  alt="Homa"
+                  width={400}
+                  height={300}
+                  className="w-full h-auto object-contain"
+                />
+                <span className="info circle absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 opacity-0 hover:opacity-100 transition-opacity duration-300">
+                  <span className="centrize w-full">
+                    <span className="vertical-center text-white text-center">
+                      <i className="icon fas fa-link text-2xl mb-2" />
+                      <div className="desc">
+                        <div className="category text-sm font-semibold">
+                          Image
+                        </div>
+                        <div className="name text-lg font-bold">
+                          Royal Jeans
+                        </div>
+                      </div>
+                    </span>
+                  </span>
+                </span>
+              </a>
+            </Link>
+          </div>
+        </div>
       </div>
     </Fragment>
   );
 };
-
 export default ItemIsotope;

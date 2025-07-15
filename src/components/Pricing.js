@@ -29,12 +29,12 @@ const Pricing = () => {
                   <li className="disable">Next.js (SSR/SSG)</li>
                 </ul>
               </div>
-              <div className="bts">
+              {/* <div className="bts">
                 <a href="#" className="btn hover-animated">
                   <span className="circle" />
                   <span className="lnk">Buy Now</span>
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="pricing-col">
@@ -60,12 +60,12 @@ const Pricing = () => {
                   </li>
                 </ul>
               </div>
-              <div className="bts">
+              {/* <div className="bts">
                 <a href="#" className="btn hover-animated">
                   <span className="circle" />
                   <span className="lnk">Buy Now</span>
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
