@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="stylesheet" href="css/fontawesome.css" />
         <link rel="stylesheet" href="css/brands.css" />
         <link rel="stylesheet" href="css/solid.css" />
-        <link rel="shortcut icon" href="images/favicons/favicon.ico" />
+        <link rel="shortcut icon" href="images/favicons/favicon-16x16.png" />
       </Head>
       <Component {...pageProps} />
     </Fragment>

@@ -740,8 +740,7 @@
 .section.started.personal .started-content .typed-subtitle,
 .section.started.personal .started-content .typed-bread {
   margin-top: 0;
-  top: auto;
-  bottom: 50px;
+  top: 22rem;
   left: 20%;
   line-height: 74px;
   text-align: left;
@@ -1010,7 +1009,7 @@
 /* section started desktop */
 @media (min-width: 1200px) {
   .section.started .started-content .logo {
-    top: -11.5vh;
+    top: -55.5vh;
     left: -18.5vw;
     width: 46vw;
     height: 93vh;
@@ -1020,7 +1019,7 @@
     margin-left: 0;
     margin-top: 0;
     left: 50vw;
-    top: 60vh;
+    top: 20vh;
     bottom: auto;
   }
 }
@@ -1069,10 +1068,10 @@
   }
 
   .section.started .started-content .logo {
-    top: -50px;
+    top: 3.1rem;
     left: -150px;
     width: 640px;
-    height: 560px;
+    height: 635px;
   }
 
   .section.started.personal .started-content .h-title {
@@ -1152,6 +1151,16 @@
     clip-path: polygon(25% 0, 100% 25%, 80% 100%, 0 85%);
   }
 
+
+  @media (max-width: 768px) {
+    .section.started .started-content .logo {
+      width: 70vw;
+      height: 50vh;
+      left: 5rem;
+      top: -22rem;
+    }
+  }
+
   .section.started.personal .started-content .h-title {
     left: 0;
     top: 64vh;
@@ -1159,6 +1168,15 @@
     width: 100%;
     margin-top: 0;
     margin-left: 0;
+  }
+
+  @media (max-width: 768px) {
+    .section.started.personal .started-content .h-title {
+      top: 14vh;
+      font-size: 20px;
+      padding: 0 15px;
+      text-align: center;
+    }
   }
 
   .section.started.personal .started-content .typed-subtitle,

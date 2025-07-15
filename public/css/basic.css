@@ -933,11 +933,11 @@ dd {
 .centrize {
 	display: flex !important;
 	flex-direction: column !important;
-	justify-content: flex-end !important;
+	justify-content: flex-start !important;
 	table-layout: fixed !important;
 	height: 50% !important;
 	position: relative !important;
-	top: 0;
+	top: 28rem;
 	left: 0;
 	z-index: 2;
 }
