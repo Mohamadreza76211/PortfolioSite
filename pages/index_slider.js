@@ -86,6 +86,8 @@ const IndexSlider = () => {
             </Swiper>
           </div>
         </div>
+
+        {/** hello*/}
         {/* started content */}
         <div className="centrize full-width">
           <div className="vertical-center">
