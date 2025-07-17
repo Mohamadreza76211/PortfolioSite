@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 const Clients = () => {
   return (
     <div className="section clients" id="section-clients">

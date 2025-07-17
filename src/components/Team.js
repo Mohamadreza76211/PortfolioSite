@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 const Team = () => {
   return (
     <div className="section team" id="section-team">

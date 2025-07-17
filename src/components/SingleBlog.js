@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 const SingleBlog = () => {
   return (
     <div className="section blog" id="next_section">

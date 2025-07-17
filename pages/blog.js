@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { DefaultPageBanner } from "../src/components/PageBanner";
 import { Fragment, useContext } from "react";
 import Layout from "../src/layout/Layout";
