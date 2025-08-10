@@ -113,6 +113,37 @@ const ItemIsotope = () => {
           style={{ marginTop: "300px" }}
         >
           <div className="image cursor-pointer overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+            <Link href="https://shikhub.com/">
+              <a target="_blank" rel="noopener noreferrer">
+                <Image
+                  src="/images/Shikhub.png"
+                  alt="Homa"
+                  width={400}
+                  height={300}
+                  className="w-full h-auto object-contain"
+                />
+                <span className="info circle absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 opacity-0 hover:opacity-100 transition-opacity duration-300">
+                  <span className="centrize w-full">
+                    <span className="vertical-center text-white text-center">
+                      <i className="icon fas fa-link text-2xl mb-2" />
+                      <div className="desc">
+                        <div className="category text-sm font-semibold">
+                          Image
+                        </div>
+                        <div className="name text-lg font-bold">Shikhub</div>
+                      </div>
+                    </span>
+                  </span>
+                </span>
+              </a>
+            </Link>
+          </div>
+        </div>
+        <div
+          className="box-item f-links relative"
+          style={{ marginTop: "300px" }}
+        >
+          <div className="image cursor-pointer overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
             <Link href="https://polarisapp.ir/">
               <a target="_blank" rel="noopener noreferrer">
                 <Image
