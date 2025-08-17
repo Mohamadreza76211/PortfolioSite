@@ -236,7 +236,7 @@ const ItemIsotope = () => {
             </Link>
           </div>
         </div>
-        <div
+        {/* <div
           className="box-item f-links relative"
           style={{ marginTop: "300px" }}
         >
@@ -268,7 +268,7 @@ const ItemIsotope = () => {
               </a>
             </Link>
           </div>
-        </div>
+        </div> */}
         <div
           className="box-item f-links relative"
           style={{ marginTop: "300px" }}
