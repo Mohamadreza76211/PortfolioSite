@@ -1,0 +1,76 @@
+{
+  "name": "Mohammadreza Najafi Portfolio",
+  "short_name": "Portfolio",
+  "description": "A Progressive Web App portfolio built with Next.js showcasing professional experience and work",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "orientation": "portrait-primary",
+  "categories": [
+    "business",
+    "productivity",
+    "utilities"
+  ],
+  "lang": "en",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "/images/favicons/logo_144x144.jpg",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/favicons/logo_192x192.jpg",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/favicons/logo_512x512.jpg",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "About",
+      "short_name": "About",
+      "description": "View about information",
+      "url": "/",
+      "icons": [
+        {
+          "src": "/images/favicons/logo_192x192.jpg",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Portfolio",
+      "short_name": "Works",
+      "description": "View portfolio works",
+      "url": "/works",
+      "icons": [
+        {
+          "src": "/images/favicons/logo_192x192.jpg",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Contact",
+      "short_name": "Contact",
+      "description": "Get in touch",
+      "url": "/contacts",
+      "icons": [
+        {
+          "src": "/images/favicons/logo_192x192.jpg",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}
